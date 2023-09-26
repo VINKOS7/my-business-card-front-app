@@ -10,8 +10,9 @@
     .item {
         background: whitesmoke;
         color: black;
-        width: 20vw;
-        height: 300px;
-        display: inline;
+        width: 100vw;
+        height: 70vh;
+        margin: 10vw;
+        border-radius: 5%;
     }
 </style>

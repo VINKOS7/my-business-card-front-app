@@ -27,11 +27,12 @@
     background-image: url("../../../../assets/backgrounds/earch.gif");
     position: relative;
     z-index: 1;
+    border-bottom: 2px solid;
 
     &:hover::after{
       content: "";
-      margin-left: -42.25vw;
-      width: 100%;
+      margin-left: -100vw;
+      width: 180%;
       height: 100%;
       position: absolute;
       z-index: -1;

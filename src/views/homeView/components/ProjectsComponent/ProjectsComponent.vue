@@ -1,20 +1,28 @@
 <template>
-    <div class="projects">
-        <div  v-for="project in projects">
-            <ProjectItemComponent/>  
-        </div>         
-    </div>
+    <carousel :items-to-show="1.3">
+      <slide v-for="slide in projects" :key="slide">
+        <ProjectItemComponent/> 
+      </slide>
+  
+      <template #addons>
+        <navigation />
+        <pagination/>
+      </template>
+    </carousel>
 </template>
 
 <script setup lang="ts">
+    import 'vue3-carousel/dist/carousel.css'
+    import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
     import ProjectItemComponent from "./components/ProjectItemComponent.vue"
-
-    const projects = [0,2,3,5,4]
+// <ProjectItemComponent/>  
+    const projects = [0,1,2,3,4]
 </script>
 
-<style lang="css" scoped>
-    .projects{
-        overflow-x: hidden;
-        width: 40vw;
+<style lang="scss" scoped>
+    .projects {
+        display: inline-flex;
+        overflow-x: scroll;
+        width: 100vw;
     }
 </style>
