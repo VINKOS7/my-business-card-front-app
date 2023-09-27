@@ -4,7 +4,7 @@
         <ButtonComponent>Проекты</ButtonComponent>
         <ButtonComponent>Услуги</ButtonComponent>
         <ButtonComponent>Отзывы</ButtonComponent>
-        <ButtonComponent>О сайте</ButtonComponent>
+        <ButtonComponent><div @click="$router.push('/about')">О сайте</div></ButtonComponent>
     </div>
 </template>
 

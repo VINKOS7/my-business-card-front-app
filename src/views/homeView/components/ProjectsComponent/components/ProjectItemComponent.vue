@@ -1,14 +1,15 @@
 <template>
-    <div class="item">project item</div>
+    <div class="item" :style="{ 'background-image': 'url(' + url + ')' }">
+        <slot>project item</slot>
+    </div>
 </template>
 
 <script setup lang="ts">
-
+    defineProps<{url: string}>()
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
     .item {
-        background: whitesmoke;
         color: black;
         width: 100vw;
         height: 70vh;

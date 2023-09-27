@@ -1,9 +1,6 @@
 <template>
-    <div 
-        @click="$router.push({ path: path })"
-        class="buttom"
-    >
-        <slot>Главная</slot>
+    <div class="buttom">
+        <slot @click="$router.push({ path: path })">Главная</slot>
     </div>
 </template>
 

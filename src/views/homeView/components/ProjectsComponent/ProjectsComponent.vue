@@ -1,9 +1,8 @@
 <template>
     <carousel :items-to-show="1.3">
       <slide v-for="slide in projects" :key="slide">
-        <ProjectItemComponent/> 
+        <ProjectItemComponent url='https://selmach.com/wp-content/uploads/2018/09/10-things-you-never-realised-you-didnt-know-about-metal-1024x683.jpg'/> 
       </slide>
-  
       <template #addons>
         <navigation />
         <pagination/>

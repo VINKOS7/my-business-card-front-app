@@ -18,20 +18,20 @@
       Всегда онлайн, дружелюбен, нахожу язык с заказчиком, внимателен к деталям.<br>
       Всегда интересны необычные задачи, технолгии и кофе)
     </BannerComponent>
-    <FooterComponent/>
   </div>
 </template>
 
 <script setup lang="ts">
-  import FooterComponent from './components/FooterComponent.vue';
-  import BannerComponent from './components/BannerComponent.vue'
+  import BannerComponent from '../components/BannerComponent.vue'
   import WellcomeComponent from './components/WellcomeComponent/WellcomeComponent.vue'
   import ProjectsComponent from './components/ProjectsComponent/ProjectsComponent.vue'
-//    <ProjectsComponent/>
-
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+  .cat {
+    width: 50vw;
+    max-width: 700px;
+  }
 
   .home {
     overflow: hidden;
